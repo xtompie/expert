@@ -43,7 +43,7 @@
   .lens{display:flex;gap:12px;opacity:0;transform:translateY(4px);
     transition:opacity .28s, transform .28s;margin:5px 0}
   .lens.show{opacity:1;transform:none}
-  .lens .n{color:var(--coral);min-width:190px}
+  .lens .n{color:var(--coral);min-width:230px}
   .lens .d{color:var(--dim)}
   .menu{margin-top:18px;opacity:0;transition:opacity .3s}
   .menu.show{opacity:1}
@@ -63,13 +63,13 @@
         <span class="typed" id="tL"></span><span class="caret" id="cL"></span>
       </div>
       <div class="resp" id="rL">
-        <div class="lead">Great idea! Here's your migration plan 👇</div>
-<div class="code">1. Split by entity: UserService, OrderService, NoteService
-2. Add an API gateway and a message bus
-3. Containerize everything, deploy on Kubernetes
-4. Migrate incrementally, service by service</div>
-        <div class="muted" style="margin-top:10px">· Docker · gRPC · Service mesh · Event-driven · CQRS</div>
-        <div style="margin-top:10px"><span class="ok">✓ sounds right</span> <span class="muted">— and it's the plan every conference talk already shipped.</span></div>
+        <div class="lead">You just need better habits 👇</div>
+<div class="code">1. Use the Pomodoro technique (25 min focus)
+2. Break big tasks into small steps
+3. Remove distractions, silence your phone
+4. Reward yourself after each session</div>
+        <div class="muted" style="margin-top:10px">· discipline · motivation · productivity hacks · just start</div>
+        <div style="margin-top:10px"><span class="ok">✓ sounds helpful</span> <span class="muted">— and it's the same list every blog already shipped.</span></div>
       </div>
     </div>
     <!-- RIGHT: expert -->
@@ -79,10 +79,10 @@
         <span class="typed" id="tR"></span><span class="caret" id="cR"></span>
       </div>
       <div class="resp" id="rR">
-        <div class="lead">Before answering — three experts from the base:</div>
-        <div class="lens" data-i="0"><span class="n">◆ software-architect</span><span class="d">what justifies microservices here — independent deploys, ownership, scaling — or is this a distributed monolith in waiting?</span></div>
-        <div class="lens" data-i="1"><span class="n">◆ charlie-munger</span><span class="d">invert: what would guarantee this migration fails? are we doing any of it? whose incentives push for the rewrite?</span></div>
-        <div class="lens" data-i="2"><span class="n">◆ nassim-taleb</span><span class="d">what happens in the worst 1% of the cutover — can it ruin you? what could we REMOVE from the monolith instead of adding a network?</span></div>
+        <div class="lead">Before any tips — three experts from the base:</div>
+        <div class="lens" data-i="0"><span class="n">◆ behavioral-psychology</span><span class="d">don't ask what you'd do — watch what you DO. where is the friction, and what's the immediate reward for avoiding?</span></div>
+        <div class="lens" data-i="1"><span class="n">◆ carl-jung</span><span class="d">what does the avoidance protect? what keeps recurring despite every fix — repetition is a message.</span></div>
+        <div class="lens" data-i="2"><span class="n">◆ jordan-peterson</span><span class="d">what precisely are you avoiding, and where are you lying to yourself to keep this comfortable?</span></div>
         <div class="menu" id="menu">
           <div class="mtitle">What next?</div>
           <div class="mopt"><span class="mnum">1</span> Another expert from my head</div>
@@ -96,8 +96,8 @@
   </div>
 </div>
 <script>
-const L="should we rewrite our monolith into microservices?";
-const R="/expert should we rewrite our monolith into microservices?";
+const L="why do I keep putting off things I actually want to do?";
+const R="/expert why do I keep putting off things I actually want to do?";
 const el=id=>document.getElementById(id);
 const tL=el('tL'),tR=el('tR'),cL=el('cL'),cR=el('cR'),rL=el('rL'),rR=el('rR');
 const lenses=[...document.querySelectorAll('.lens')];
