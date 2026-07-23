@@ -10,8 +10,8 @@ Expert is a skill for Claude Code that summons 1–3 domain experts — fields, 
 
 ## Usage
 
-- `do X for me` — direct, as usual.
-- `/expert why do I keep putting off things I actually want to do?` — it picks the experts that fit (in the demo run: Oliver Burkeman, James Clear, Sigmund Freud) and gives their reads first.
+- `why do I keep putting off things I actually want to do?` — direct, as usual: one answer, one voice.
+- `/expert why do I keep putting off things I actually want to do?` — same question through the skill: it picks the experts that fit (in the demo run: Oliver Burkeman, James Clear, Sigmund Freud), each gives their read, disagreements included.
 - `/expert security, look at this diff` — name the expert yourself; works even if they're not in the base.
 - `/expert add behavioral economics` — discovery mode: propose and save new experts for a topic.
 
