@@ -6,10 +6,12 @@ Expert is a skill for Claude Code that summons 1–3 domain experts — fields, 
 
 ![Expert answering "why do I keep putting off things I actually want to do?" with three expert reads](demo/expert-demo.gif)
 
+*The reads in the demo are excerpts from a real `/expert` run — the skill picked Burkeman, Clear, and Freud from the index on its own.*
+
 ## Usage
 
 - `do X for me` — direct, as usual.
-- `/expert why do I keep putting off things I actually want to do?` — it picks the experts that fit (here: behavioral psychology, Jung, Peterson) and gives their reads first.
+- `/expert why do I keep putting off things I actually want to do?` — it picks the experts that fit (in the demo run: Oliver Burkeman, James Clear, Sigmund Freud) and gives their reads first.
 - `/expert security, look at this diff` — name the expert yourself; works even if they're not in the base.
 - `/expert add behavioral economics` — discovery mode: propose and save new experts for a topic.
 
@@ -31,9 +33,9 @@ Restart the session and `/expert` is available. Update with `git pull` in that f
 
 ## What's an expert?
 
-A **perspective with domain knowledge**: a field (behavioral psychology), a school of thought (stoicism), or a named person (Carl Jung). Unlike a generic thinking lens, an expert *brings* domain vocabulary, frameworks, and opinions — that's the point.
+A **perspective with domain knowledge**: a field (behavioral psychology), a school of thought (stoicism), or a named person (Sigmund Freud). Unlike a generic thinking lens, an expert *brings* domain vocabulary, frameworks, and opinions — that's the point.
 
-Ask *"why do I keep putting off things I actually want to do?"* and you'll get the same ten productivity tips every blog ships. Ask `/expert` and three experts read it their own way — **`behavioral-psychology`**: *don't ask what you'd do — watch what you DO; where is the friction, and what's the immediate reward for avoiding?* **`carl-jung`**: *what does the avoidance protect? What keeps recurring despite every fix — repetition is a message.* **`jordan-peterson`**: *what precisely are you avoiding, and where are you lying to yourself to keep this comfortable?*
+Ask *"why do I keep putting off things I actually want to do?"* directly and you get one voice, one angle. Ask `/expert` and the experts read it each their own way — from the same run as the demo: **`oliver-burkeman`**: *you put it off precisely because you want it — the finite, imperfect real version kills the perfect fantasy version; readiness is not coming.* **`james-clear`**: *no cue, no two-minute version, phone three centimeters from your hand — it's a design flaw, not a character flaw.* **`sigmund-freud`**: *ask not "why can't I start" but "what does never finishing protect me from?" — the delay keeps the wish alive and avoids the verdict.* Then it shows where they disagree and closes with a short synthesis and a menu (another expert, the web, execute, sub-agents).
 
 Experts are opinionated by design. The balance comes from picking **multiple** experts and letting them disagree — the disagreement is signal, not noise.
 
