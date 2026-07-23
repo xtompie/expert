@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Expert demo</title>
+<style>
+  :root{
+    --bg:#0a0a0a; --panel:#151515; --line:#2a2a2a;
+    --text:#e6e6e6; --dim:#7d7d7d; --coral:#d97757; --code:#9a9a9a;
+    --green:#7d7d7d; --mono:"SF Mono","JetBrains Mono",Menlo,ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);}
+  #stage{
+    width:1200px;height:675px;background:var(--bg);color:var(--text);
+    font-family:var(--mono);font-size:15px;line-height:1.55;
+    display:flex;flex-direction:column;overflow:hidden;
+  }
+  .topbar{
+    height:34px;flex:0 0 34px;display:flex;align-items:center;gap:8px;
+    padding:0 18px;color:var(--dim);font-size:12.5px;border-bottom:1px solid var(--line);
+  }
+  .topbar .mark{color:var(--coral)}
+  .cols{flex:1;display:flex}
+  .col{flex:1;padding:22px 22px;overflow:hidden}
+  .col+.col{border-left:1px solid var(--line)}
+  .inputbox{
+    border:1px solid var(--line);border-radius:8px;padding:9px 12px;
+    display:flex;gap:9px;align-items:baseline;background:#151515;
+  }
+  .prompt{color:var(--coral);font-weight:600}
+  .typed{white-space:pre-wrap;word-break:break-word}
+  .caret{display:inline-block;width:8px;height:16px;background:var(--coral);
+    transform:translateY(2px);animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .resp{margin-top:16px;opacity:0;transition:opacity .25s}
+  .resp.show{opacity:1}
+  .muted{color:var(--dim)}
+  .code{color:var(--code);white-space:pre-wrap;font-size:13.5px;line-height:1.5}
+  .tag{color:var(--coral)}
+  .ok{color:var(--green)}
+  .lead{margin-bottom:10px}
+  .lens{display:flex;gap:12px;opacity:0;transform:translateY(4px);
+    transition:opacity .28s, transform .28s;margin:5px 0}
+  .lens.show{opacity:1;transform:none}
+  .lens .n{color:var(--coral);min-width:190px}
+  .lens .d{color:var(--dim)}
+  .menu{margin-top:18px;opacity:0;transition:opacity .3s}
+  .menu.show{opacity:1}
+  .mtitle{font-weight:600;margin-bottom:6px}
+  .mopt{margin:2px 0;color:var(--text)}
+  .mnum{display:inline-block;width:22px;color:var(--coral);font-weight:600}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="topbar"><span class="mark">✻</span> Claude Code</div>
+  <div class="cols">
+    <!-- LEFT: direct -->
+    <div class="col">
+      <div class="inputbox">
+        <span class="prompt">❯</span>
+        <span class="typed" id="tL"></span><span class="caret" id="cL"></span>
+      </div>
+      <div class="resp" id="rL">
+        <div class="lead">Great idea! Here's your migration plan 👇</div>
+<div class="code">1. Split by entity: UserService, OrderService, NoteService
+2. Add an API gateway and a message bus
+3. Containerize everything, deploy on Kubernetes
+4. Migrate incrementally, service by service</div>
+        <div class="muted" style="margin-top:10px">· Docker · gRPC · Service mesh · Event-driven · CQRS</div>
+        <div style="margin-top:10px"><span class="ok">✓ sounds right</span> <span class="muted">— and it's the plan every conference talk already shipped.</span></div>
+      </div>
+    </div>
+    <!-- RIGHT: expert -->
+    <div class="col">
+      <div class="inputbox">
+        <span class="prompt">❯</span>
+        <span class="typed" id="tR"></span><span class="caret" id="cR"></span>
+      </div>
+      <div class="resp" id="rR">
+        <div class="lead">Before answering — three experts from the base:</div>
+        <div class="lens" data-i="0"><span class="n">◆ software-architect</span><span class="d">what justifies microservices here — independent deploys, ownership, scaling — or is this a distributed monolith in waiting?</span></div>
+        <div class="lens" data-i="1"><span class="n">◆ charlie-munger</span><span class="d">invert: what would guarantee this migration fails? are we doing any of it? whose incentives push for the rewrite?</span></div>
+        <div class="lens" data-i="2"><span class="n">◆ nassim-taleb</span><span class="d">what happens in the worst 1% of the cutover — can it ruin you? what could we REMOVE from the monolith instead of adding a network?</span></div>
+        <div class="menu" id="menu">
+          <div class="mtitle">What next?</div>
+          <div class="mopt"><span class="mnum">1</span> Another expert from my head</div>
+          <div class="mopt"><span class="mnum">2</span> Another from the base</div>
+          <div class="mopt"><span class="mnum">3</span> Search the web</div>
+          <div class="mopt"><span class="mnum">4</span> Execute it</div>
+          <div class="mopt"><span class="mnum">5</span> Run as sub-agents</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const L="should we rewrite our monolith into microservices?";
+const R="/expert should we rewrite our monolith into microservices?";
+const el=id=>document.getElementById(id);
+const tL=el('tL'),tR=el('tR'),cL=el('cL'),cR=el('cR'),rL=el('rL'),rR=el('rR');
+const lenses=[...document.querySelectorAll('.lens')];
+const menu=el('menu');
+const TYPE0=400, CPS=26;
+const typeEnd=TYPE0+Math.max(L.length,R.length)*CPS;
+const leftT=typeEnd+250, rightT=leftT+350;
+const lensT=i=>rightT+150+i*260;
+const menuT=lensT(lenses.length-1)+350, END=menuT+10000;
+function seek(t){
+  tL.textContent=L.slice(0,Math.max(0,Math.floor((t-TYPE0)/CPS)));
+  tR.textContent=R.slice(0,Math.max(0,Math.floor((t-TYPE0)/CPS)));
+  cL.style.visibility=(t>=TYPE0&&t<typeEnd)?'visible':'hidden';
+  cR.style.visibility=(t>=TYPE0&&t<menuT)?'visible':'hidden';
+  rL.classList.toggle('show',t>=leftT);
+  rR.classList.toggle('show',t>=rightT);
+  lenses.forEach((l,i)=>l.classList.toggle('show',t>=lensT(i)));
+  menu.classList.toggle('show',t>=menuT);
+}
+window.seek=seek; window.DEMO_END=END;
+if(!location.search.includes('capture')){
+  let t0=null;
+  function loop(ts){ if(t0===null)t0=ts; seek((ts-t0)%(END+600)); requestAnimationFrame(loop); }
+  requestAnimationFrame(loop);
+} else { seek(0); }
+</script>
+</body>
+</html>
