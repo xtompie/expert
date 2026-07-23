@@ -54,3 +54,23 @@ Checklist for systematically growing the base along the "thinkers" axis. Work fi
 
 ## Leadership & management
 - [x] leadership & management — `andy-grove`, `peter-drucker`, `patrick-lencioni`, `camille-fournier`, `jocko-willink`, `chief-of-staff`, `project-manager`
+
+## Everyday life (added 2026-07, second pass)
+- [x] relationships & couples — `john-gottman`, `sue-johnson`, `esther-perel`
+- [x] parenting — `faber-mazlish`, `ross-greene`
+- [x] difficult conversations — `marshall-rosenberg` (NVC), `stone-patton-heen`, `crucial-conversations`
+- [x] personal finance (household) — `morgan-housel`, `ramit-sethi`, `dave-ramsey`
+- [x] learning & memory — `anders-ericsson`, `barbara-oakley`, `spaced-repetition`
+- [x] creativity — `rick-rubin`, `twyla-tharp`, `julia-cameron`, `austin-kleon`
+- [x] systems thinking — `donella-meadows`, `john-gall`
+- [x] game theory — `thomas-schelling`, `robert-axelrod`
+- [x] power & institutions — `niccolo-machiavelli`, `robert-greene`, `james-c-scott`
+- [x] ethics (normative) — `utilitarianism`, `deontology`, `virtue-ethics` (schools, like `stoicism`)
+- [x] mindfulness & non-striving — `jon-kabat-zinn`, `alan-watts`
+
+## Open gaps (deliberately skipped so far)
+- [ ] everyday law — jurisdiction-specific; revisit with a per-country school if needed
+- [ ] nutrition — partly covered by `peter-attia`; contested science, tread carefully
+- [ ] media & propaganda — Neil Postman (Amusing Ourselves to Death), Marshall McLuhan (the medium is the message)
+- [ ] classical strategy — Sun Tzu, John Boyd (OODA), Clausewitz
+- [ ] evolutionary thinking — Richard Dawkins (selfish gene, memes), Robert Trivers (reciprocal altruism)
