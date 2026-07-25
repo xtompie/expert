@@ -32,19 +32,25 @@ When an expert you played from your head (or found online) GENUINELY helped and 
 - Keep files short (15–30 lines). Distill; never paste a 200-line "agent personality". The base grows from use, not from hoarding.
 
 ## Expert file format (`experts/<slug>.md`)
+Fixed **envelope** — required; the skill's mechanics (INDEX, selection, dedup) depend on it:
 ```
 ---
 name: <slug>
-field: <one-line domain>
-when: <task smells this expert fits>
+field: <one-line domain, with canonical anchors (books, frameworks, standards)>
+when: <task smells this expert fits — the everyday phrasings people actually use>
 when_not: <where this perspective misleads>
 ---
-Voice: <1-2 lines — how they talk and what they optimize for>
-Core ideas: <comma-separated key concepts/frameworks — their actual vocabulary>
-Questions they ask:
-- <3-6 characteristic questions>
-Never lets slide: <1-2 lines — what they always call out>
 ```
+Free **payload** — everything after the frontmatter; 15–30 lines total file length; NO mandatory sections. First ask: *what is this expert's native genre of apparatus?* Then write the payload in that genre — whatever most strongly activates the expert's REAL apparatus and keeps the model from drifting into generic advice. Genres (pick/mix what fits THIS expert, ignore the rest):
+- diagnostic questions (only if the expert genuinely thinks in questions)
+- checklist · predictive markers (what they look for) · procedure/algorithm
+- practices/exercises · pattern catalog/taxonomy · principles/aphorisms
+- trade-off smells / failure modes (typical for role archetypes)
+- `Voice:` + one `Sample:` utterance — only for a distinctive, well-known voice; a paraphrase of documented style, NEVER an invented verbatim quote
+- `Disagrees with: <other base experts>` — only if the disagreement is real and documented
+- `Never lets slide:` — keep when it carries signal
+
+Enrich with the expert's signature material — what they repeat constantly in their published work (the anti-forgetting anchor); cut filler any generic advisor would say. Every concrete claim must be genuinely attributable (thin-knowledge guard applies).
 
 ## Process
 1. Summarize the task in 1 sentence. If args start with `add` → Discovery mode instead.
@@ -66,5 +72,6 @@ Never lets slide: <1-2 lines — what they always call out>
 - An expert is opinionated. Hedge-free, in-character reads beat balanced summaries — the balance comes from picking MULTIPLE experts.
 - Real people: play their published thinking (books, talks, frameworks), not gossip; if they'd genuinely disagree with how they're being used, say so in character.
 - **Thin-knowledge guard (anti-hallucination):** before creating or playing a named person, honestly assess how well you know their published work. Well-known thinker (books widely discussed, stable frameworks) → a short concept list in the file is enough. Thin or uncertain knowledge → SAY SO, and either (a) generalize the expert to their school/field (e.g. "analytical psychology" instead of a minor Jungian), or (b) with the user's OK, research the web and write their ACTUAL claims into the file — the file then becomes the source of truth. Never improvise specific claims, quotes, or frameworks for a person you barely know.
-- The `Core ideas` line is an activation key, not decoration: it pins WHICH concepts (in the expert's own vocabulary) the model should reason with, so keep it precise and use it.
+- The payload is an activation key, not decoration: it pins WHICH concepts (in the expert's own vocabulary and native genre) the model should reason with — use it, don't paraphrase around it.
+- After a write-back is accepted, offer to commit & push: the skill folder is a git repo (`git add -A && git commit && git push` in `~/.claude/skills/expert`).
 - **Language:** this skill's files are in English (config for the model). ALWAYS reply to the USER in the user's own language (e.g. Polish).
