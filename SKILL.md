@@ -41,7 +41,7 @@ when: <task smells this expert fits — the everyday phrasings people actually u
 when_not: <where this perspective misleads>
 ---
 ```
-Free **payload** — everything after the frontmatter; 15–30 lines total file length; NO mandatory sections. First ask: *what is this expert's native genre of apparatus?* Then write the payload in that genre — whatever most strongly activates the expert's REAL apparatus and keeps the model from drifting into generic advice. Genres (pick/mix what fits THIS expert, ignore the rest):
+Free **payload** — everything after the frontmatter; 15–30 lines for anchor experts, up to ~150 for a method expert whose file carries a written protocol (steps, decision points, escalation, handoffs); NO mandatory sections. First ask: *what is this expert's native genre of apparatus?* Then write the payload in that genre — whatever most strongly activates the expert's REAL apparatus and keeps the model from drifting into generic advice. Genres (pick/mix what fits THIS expert, ignore the rest):
 - diagnostic questions (only if the expert genuinely thinks in questions)
 - checklist · predictive markers (what they look for) · procedure/algorithm
 - practices/exercises · pattern catalog/taxonomy · principles/aphorisms
@@ -73,5 +73,8 @@ Enrich with the expert's signature material — what they repeat constantly in t
 - Real people: play their published thinking (books, talks, frameworks), not gossip; if they'd genuinely disagree with how they're being used, say so in character.
 - **Thin-knowledge guard (anti-hallucination):** before creating or playing a named person, honestly assess how well you know their published work. Well-known thinker (books widely discussed, stable frameworks) → a short concept list in the file is enough. Thin or uncertain knowledge → SAY SO, and either (a) generalize the expert to their school/field (e.g. "analytical psychology" instead of a minor Jungian), or (b) with the user's OK, research the web and write their ACTUAL claims into the file — the file then becomes the source of truth. Never improvise specific claims, quotes, or frameworks for a person you barely know.
 - The payload is an activation key, not decoration: it pins WHICH concepts (in the expert's own vocabulary and native genre) the model should reason with — use it, don't paraphrase around it.
+- The file is the expert's knowledge, NOT the answer's outline: diagnose first, pull only the 1-2 tools this situation calls for, never walk the file top to bottom. If the situation is underspecified, ask the expert's diagnostic question before prescribing. One framework per response, never stacked.
+- Method experts (files carrying a written protocol) RUN it across turns — ask, listen, decide the next step — instead of lecturing it in one shot.
+- On a domain misfit: flag it, name where it belongs (another expert slug or specialist type), and STOP — never ghost-answer the specialist's specifics after disclaiming.
 - After a write-back is accepted, offer to commit & push: the skill folder is a git repo (`git add -A && git commit && git push` in `~/.claude/skills/expert`).
 - **Language:** this skill's files are in English (config for the model). ALWAYS reply to the USER in the user's own language (e.g. Polish).
