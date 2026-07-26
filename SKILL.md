@@ -1,6 +1,6 @@
 ---
 name: expert
-description: "Summon domain experts (fields, schools of thought, named people) from the base: pick 1-3 that fit the task, embody them or run them as sub-agents, and grow the base by proposing new experts from the model's knowledge or the web. Invoke explicitly."
+description: "Summon domain experts (fields, schools of thought, named people) from the base: pick the ones that genuinely fit (usually 1-3), embody them or run them as sub-agents, and grow the base by proposing new experts from the model's knowledge or the web. Invoke explicitly."
 argument-hint: 'expert review this db schema | expert security, look at this diff | expert add behavioral economics'
 allowed-tools: Read, Write, WebSearch, WebFetch, Task
 disable-model-invocation: true
@@ -15,11 +15,17 @@ An expert is a **perspective with domain knowledge**: a field (behavioral psycho
 
 ## Three sources of experts (all live)
 1. **Your head (the model).** You know far more experts than the folder holds. The folder is a menu and a memory, not a boundary. If the task calls for an expert not in the base, play them anyway — and propose adding them (write-back).
-2. **The `experts/` folder (the base).** Read `INDEX.md`, pick the 1–3 best fits (more only if the user asks for a panel), and load ONLY those files.
+2. **The `experts/` folder (the base).** Read `INDEX.md` and pick the experts that genuinely fit — **fit, not count**: usually 1–3 (each expert is a full voice, so more than a few turns into mush), and one strong fit beats three loose ones. A panel of several only when clashing perspectives add signal. Load ONLY the chosen files.
 3. **The internet — never automatic, never silent.** Offered only as a menu choice and run only on the user's OK. Purpose: find who the recognized experts / schools / frameworks are for this KIND of problem — candidates for new expert files. Distill what you find into the file format below; don't paste articles.
 
-## Two modes of use
-- **Embody (default):** speak AS the expert(s) in the main conversation. With several experts, let each speak in their own clearly-labeled section — keep their voices and disagreements distinct; do not blend them into mush.
+## What the user actually wants (match it — don't ritualize)
+Summoning an expert loads its apparatus into YOUR reasoning; it is not a cue to perform that apparatus at the user. Read which of two things is being asked:
+- **Help doing the task** (e.g. "I'm building these modules", "write this"): BE the expert while doing the work — the payload runs in your head, not at the user. Raise a concern (coupling, a risk) only when it genuinely arises; don't front-load the framework, don't interrogate, don't hand down an unsolicited verdict. No reads-and-menu ritual here — just better work because the right lens is active.
+- **A read / assessment** (e.g. "what do you think of this?", "review this", a multi-expert consult like the demo): give the expert's take — what they see, what worries them — and THEN the menu applies.
+Default to serving the actual request. The reads + menu in the Process below belong to assessment mode, not to every call.
+
+## Two ways to embody
+- **In the conversation (default):** speak AS the expert(s). With several, give each their own clearly-labeled section — keep voices and disagreements distinct; do not blend them into mush.
 - **Sub-agents (on request or for heavy work):** spawn each expert as its own sub-agent with the expert file as its persona, run in parallel, then synthesize.
 
 ## Discovery / add mode
@@ -54,11 +60,11 @@ Enrich with the expert's signature material — what they repeat constantly in t
 
 ## Process
 1. Summarize the task in 1 sentence. If args start with `add` → Discovery mode instead.
-2. Read `INDEX.md`; pick the 1–3 experts that genuinely fit. If the user named an expert, that one is in — even if not in the base (play from your head).
-3. Load only the chosen files; embody (or spawn, if asked). Each expert gives their read: what they see, what they'd do, what worries them — in their own vocabulary.
+2. Read `INDEX.md`; pick the experts that genuinely fit (**fit, not count** — often just one). If the user named an expert, that one is in — even if not in the base (play from your head).
+3. Load only the chosen files; embody (or spawn, if asked). **Help mode:** do the task as the expert, applying the apparatus judiciously — surface a concern only when it genuinely arises. **Assess mode:** each expert gives their read — what they see, what they'd do, what worries them — in their own vocabulary.
 4. If experts disagree, SHOW the disagreement — it's signal, not noise. Close with a short synthesis in your own voice.
 5. If a from-head or web expert genuinely helped → run the write-back loop (propose, wait for OK).
-6. **Menu (a loop):**
+6. **Menu (assess mode only — a loop; skip entirely when the user just wanted help doing the task):**
    1. **Another expert from my head** — someone we haven't summoned yet.
    2. **Another from the base** — re-scan INDEX for a missed fit.
    3. **Search the web** — who else thinks about this kind of problem (candidate experts).
