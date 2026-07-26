@@ -63,6 +63,12 @@ Checklist for systematically growing the base along the "thinkers" axis. Work fi
 - [x] coaching method — `personal-growth-mentor` enriched with GROW spine + Fogg B=MAP + reversible-decisions/WRAP
 - note: no "therapist that treats" expert by design — modality experts (Beck/CBT, Frankl/logotherapy, Jung, Sue-Johnson/EFT) apply their frameworks as self-help with safety boundaries; real treatment/crisis → licensed professional (per Moore et al. FAccT'25).
 
+## Architecture & domain design (method depth, 2026-07 basket 2)
+- [x] domain discovery & contracts — `collaborative-domain-modeler` (NEW): EventStorming (Brandolini), Domain Storytelling (Hofer & Schwentner), Example Mapping (Wynne) facilitation protocols + HARDEN mode: Event Modeling (Dymitruk) backbone, Design by Contract (Meyer), Consumer-Driven Contracts (Robinson), name-every-process-with-a-terminal-event discipline
+- [x] strategic DDD — `eric-evans` enriched: subdomain triage (core/supporting/generic), context ≠ subdomain, 9 context-map patterns as signal→pattern, downstream decision chain, distillation ladder
+- [x] module boundaries — `software-architect` enriched: Parnas information hiding, coupling/cohesion scales, connascence taxonomy + weaken/reduce/localize rule, signal→diagnosis heuristics
+- [x] landscape mapping — `wardley-mapping` (NEW, Simon Wardley, CC BY-SA): evolution axis, climate/doctrine/gameplay, interactive session steps; cross-linked from `business-strategist`
+
 ## Everyday life (added 2026-07, second pass)
 - [x] relationships & couples — `john-gottman`, `sue-johnson`, `esther-perel`
 - [x] parenting — `faber-mazlish`, `ross-greene`
