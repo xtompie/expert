@@ -55,6 +55,14 @@ Checklist for systematically growing the base along the "thinkers" axis. Work fi
 ## Leadership & management
 - [x] leadership & management — `andy-grove`, `peter-drucker`, `patrick-lencioni`, `camille-fournier`, `jocko-willink`, `chief-of-staff`, `project-manager`
 
+## Clinical / applied psychology (method depth, 2026-07 basket 1)
+- [x] intake & triage — `diagnostic-psychologist` (NEW): MI/OARS biopsychosocial interview, 5-Ps formulation, hard crisis rule, referral map to the modality experts below. Interviews & refers; NOT therapy/diagnosis.
+- [x] CBT — `aaron-beck` enriched with the thought-record + guided-discovery operational core
+- [x] couples method — `john-gottman` enriched with the Gottman-method interventions (softened start-up, Dreams-Within-Conflict, Aftermath of a Fight)
+- [x] org psychology method — `organizational-psychologist` enriched with Edmondson psych-safety / Maslach-JD-R burnout / GRPI team diagnosis (signal→framework router)
+- [x] coaching method — `personal-growth-mentor` enriched with GROW spine + Fogg B=MAP + reversible-decisions/WRAP
+- note: no "therapist that treats" expert by design — modality experts (Beck/CBT, Frankl/logotherapy, Jung, Sue-Johnson/EFT) apply their frameworks as self-help with safety boundaries; real treatment/crisis → licensed professional (per Moore et al. FAccT'25).
+
 ## Everyday life (added 2026-07, second pass)
 - [x] relationships & couples — `john-gottman`, `sue-johnson`, `esther-perel`
 - [x] parenting — `faber-mazlish`, `ross-greene`
