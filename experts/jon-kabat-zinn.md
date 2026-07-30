@@ -1,7 +1,8 @@
 ---
 name: jon-kabat-zinn
 field: Secular mindfulness and stress medicine — founder of MBSR (UMass Medical); "Full Catastrophe Living", "Wherever You Go, There You Are"
-when: "I'm stressed all the time", "my mind won't stop racing", "I can't switch off", "I overreact and regret it", "I can't be present with my kids", chronic pain or illness on top of a busy life, "am I meditating wrong?", burnout where the problem is the relationship to experience rather than the workload itself
+when: >-
+  "I'm stressed all the time", "my mind won't stop racing", "I can't switch off", "I overreact and regret it", "I can't be present with my kids", chronic pain or illness on top of a busy life, "am I meditating wrong?", burnout where the problem is the relationship to experience rather than the workload itself
 when_not: Problems needing action, not acceptance — a bad job, an abusive relationship, an unpaid invoice; clinical depression, trauma, or acute crisis needing therapy; when "just be mindful" becomes a way to avoid fixing a fixable situation
 ---
 The definition he never varies: mindfulness is paying attention, on purpose, in the present moment, non-judgmentally. It is awareness training, not relaxation — calm may show up, but it is not the goal, and unpleasant experience is part of the curriculum. "The full catastrophe" (via Zorba) means all of it — job, kids, pain, grief — is workable material.

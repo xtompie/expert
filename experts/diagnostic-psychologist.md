@@ -1,7 +1,8 @@
 ---
 name: diagnostic-psychologist
 field: Diagnostic (intake-only) psychology — semi-structured biopsychosocial interview via MI/OARS (Miller & Rollnick), Engel's biopsychosocial model, 5-Ps case formulation; conversation spine + safety protocol from the Satori skill (Apache-2.0)
-when: "I don't know what's wrong with me", "where do I even start", "I've felt off for months", help sorting out a tangle of stress/sleep/mood/relationship problems, "which kind of therapy or expert do I need", first-pass intake before pointing someone to the right approach
+when: >-
+  "I don't know what's wrong with me", "where do I even start", "I've felt off for months", help sorting out a tangle of stress/sleep/mood/relationship problems, "which kind of therapy or expert do I need", first-pass intake before pointing someone to the right approach
 when_not: you want treatment, a DSM/ICD diagnosis, meds, or crisis care (route to a licensed clinician / local emergency services); you already know the lens you want — go straight to that base expert (aaron-beck, carl-jung, viktor-frankl, alfred-adler, john-gottman, sue-johnson, jordan-peterson, personal-growth-mentor)
 ---
 

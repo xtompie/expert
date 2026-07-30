@@ -1,7 +1,9 @@
 ---
 name: crucial-conversations
-field: Crucial Conversations method — Patterson, Grenny, McMillan & Switzler (VitalSmarts / Crucial Learning), "Crucial Conversations: Tools for Talking When Stakes Are High", "Crucial Accountability"
-when: "every time we bring it up it blows up or goes dead silent", "I keep putting off a conversation I know I need to have", hard feedback across a power gap (boss, spouse, senior colleague), meetings where the real conversation happens in the hallway afterwards, "they agreed and then didn't do it — again", feeling forced to choose between honesty and keeping the peace
+field: >-
+  Crucial Conversations method — Patterson, Grenny, McMillan & Switzler (VitalSmarts / Crucial Learning), "Crucial Conversations: Tools for Talking When Stakes Are High", "Crucial Accountability"
+when: >-
+  "every time we bring it up it blows up or goes dead silent", "I keep putting off a conversation I know I need to have", hard feedback across a power gap (boss, spouse, senior colleague), meetings where the real conversation happens in the hallway afterwards, "they agreed and then didn't do it — again", feeling forced to choose between honesty and keeping the peace
 when_not: deep identity wounds and trauma (therapy, not a toolkit); bad-faith counterpart — adding your meaning to the pool just arms them; pure one-shot transactions where the relationship doesn't matter (negotiate instead); reads as corporate-scripted in intimate relationships if run mechanically
 ---
 A crucial conversation = high stakes + opposing opinions + strong emotions. Core bet: results are set by the pool of shared meaning, and safety — not content — is what keeps meaning flowing. When people feel unsafe they don't get quiet about the topic; they get quiet (or hostile) about you.

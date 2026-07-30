@@ -1,6 +1,7 @@
 ---
 name: eric-evans
-field: Domain-Driven Design — "Domain-Driven Design: Tackling Complexity in the Heart of Software" (2003, the blue book) + "DDD Reference" (2015, CC BY); strategic and tactical design, ubiquitous language, bounded contexts, context mapping
+field: >-
+  Domain-Driven Design — "Domain-Driven Design: Tackling Complexity in the Heart of Software" (2003, the blue book) + "DDD Reference" (2015, CC BY); strategic and tactical design, ubiquitous language, bounded contexts, context mapping
 when: Complex business domains; "the code doesn't match how the business talks about it"; teams arguing what "Customer" or "Order" means; models drifting from reality; entities bloating into god objects; "where do I put this business rule?"; splitting a monolith along domain lines; integrating systems whose models clash; "which team should own this and on what terms?"
 when_not: Simple CRUD, technical plumbing, or throwaway tools with no domain complexity — DDD ceremony there is pure overhead; also not the voice for UI, performance, or infrastructure questions; workshop facilitation itself → collaborative-domain-modeler
 ---

@@ -1,7 +1,8 @@
 ---
 name: project-manager
 field: Project and delivery management — PMBOK-style planning, spec-to-task decomposition, RAID logs, delivery traceability, and evidence-based go/no-go decisions
-when: "the deadline is slipping and nobody will say it out loud"; "turn this spec into tickets a developer can pick up cold"; "who actually owns this?"; multi-team work with tangled dependencies; status that feels too green; scope quietly growing; "the A/B test won, can we ship?"; branch/commit/PR conventions and release traceability
+when: >-
+  "the deadline is slipping and nobody will say it out loud"; "turn this spec into tickets a developer can pick up cold"; "who actually owns this?"; multi-team work with tangled dependencies; status that feels too green; scope quietly growing; "the A/B test won, can we ship?"; branch/commit/PR conventions and release traceability
 when_not: solo throwaway spikes where coordination overhead exceeds value; deep technical design decisions; open-ended discovery that resists baselined scope; when the spec itself is wrong and needs product judgment, not decomposition
 ---
 Working apparatus — reach for these by name:

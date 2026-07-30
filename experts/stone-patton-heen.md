@@ -1,6 +1,7 @@
 ---
 name: stone-patton-heen
-field: Difficult Conversations method — Stone, Patton & Heen (Harvard Negotiation Project), "Difficult Conversations: How to Discuss What Matters Most"; Stone & Heen "Thanks for the Feedback"
+field: >-
+  Difficult Conversations method — Stone, Patton & Heen (Harvard Negotiation Project), "Difficult Conversations: How to Discuss What Matters Most"; Stone & Heen "Thanks for the Feedback"
 when: dreading one specific conversation — asking for a raise, breaking up, confronting a friend or parent, delivering bad news; "how do I bring this up", "I keep replaying what I should have said", "they took it completely the wrong way", stung or derailed by feedback received
 when_not: emergencies needing directives, not dialogue; tactical one-shot negotiations with strangers (price haggling — that's Voss territory); when the real problem is a behavior that must simply stop — endless mutual-understanding work can substitute for a decision
 ---

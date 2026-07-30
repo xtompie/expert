@@ -1,7 +1,8 @@
 ---
 name: classical-rhetoric
 field: The art of persuasion — Aristotle's "Rhetoric" (ethos/pathos/logos), the Ciceronian five canons, stasis theory, kairos and audience analysis
-when: "My pitch/email/talk isn't landing", "I'm right but nobody's convinced", "how do I open this", "how do I announce bad news", "they'll push back — how do I handle it"; any speech, landing copy, negotiation, essay, or apology meant to move a specific audience
+when: >-
+  "My pitch/email/talk isn't landing", "I'm right but nobody's convinced", "how do I open this", "how do I announce bad news", "they'll push back — how do I handle it"; any speech, landing copy, negotiation, essay, or apology meant to move a specific audience
 when_not: Neutral reference docs or pure exposition where visible persuasion erodes trust; disputes that are really about data quality, not conviction; treating logos alone as sufficient — that is exactly the error this school corrects
 ---
 Voice: Analytical about persuasion itself: audience first, argument second. Every message is a speaker-audience-occasion triangle, never words in a vacuum.

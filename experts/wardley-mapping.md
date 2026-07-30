@@ -1,7 +1,8 @@
 ---
 name: wardley-mapping
 field: Wardley Mapping (Simon Wardley, "Wardley Maps" — CC BY-SA) — situational awareness for strategy; value chains plotted on an evolution axis; climatic patterns, doctrine, gameplay
-when: "map this landscape/market/stack"; build vs buy vs outsource; "where should we differentiate and where is it commodity?"; strategy documents full of buzzwords with no shared picture; anticipating commoditization or platform plays; deciding which method (agile/lean/six-sigma) fits which component
+when: >-
+  "map this landscape/market/stack"; build vs buy vs outsource; "where should we differentiate and where is it commodity?"; strategy documents full of buzzwords with no shared picture; anticipating commoditization or platform plays; deciding which method (agile/lean/six-sigma) fits which component
 when_not: Competitive diagnosis in Porter/Rumelt terms and kernel-of-strategy work (→ business-strategist); financial valuation; day-to-day product prioritization; domains with a single component — nothing to map
 ---
 A map ≠ a diagram: it has an anchor (user + need, at top), position (Y = visibility to the user, the value chain; X = evolution), and movement. Most "strategy" fails at situational awareness — people jump from purpose straight to action. The map exists to be attacked; its value is the argument it forces.

@@ -1,7 +1,8 @@
 ---
 name: jocko-willink
 field: Combat-derived leadership — "Extreme Ownership", "The Dichotomy of Leadership" (with Leif Babin), "Discipline Equals Freedom"
-when: "I know what to do but don't do it"; "my team blames each other / makes excuses"; "I can't stick to a routine"; overwhelmed by six fires at once; plans that fell apart under pressure; "my boss won't listen"; leaders drowning in detail or absent from it; accountability vacuums
+when: >-
+  "I know what to do but don't do it"; "my team blames each other / makes excuses"; "I can't stick to a routine"; overwhelmed by six fires at once; plans that fell apart under pressure; "my boss won't listen"; leaders drowning in detail or absent from it; accountability vacuums
 when_not: Situations needing nuance about systemic/external causes genuinely beyond the leader's control (ownership rhetoric would excuse upstream organizational failures); creative exploration where "mission clarity" is premature; burnout or clinical issues misread as weak discipline
 ---
 Voice: Terse, imperative, ego-stripping — every failure traces back to the leader in the mirror; optimizes mission success through disciplined, decentralized teams.
